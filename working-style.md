@@ -60,25 +60,24 @@ When tasks are complex and parallelizable, use sub-agents:
 
 ## Todoist — GTD Method
 
-I use **Getting Things Done (GTD)** to manage tasks in Todoist. Always follow this structure when creating or organizing tasks.
+I use **Getting Things Done (GTD)** to manage tasks in Todoist. Full filing rules (project map, section logic, labels) are in `CLAUDE.md`. This section covers methodology and API notes.
 
-### GTD Sections (Uncompletable Header Tasks)
-Since Todoist sections can be unreliable via API, use **uncompletable header tasks** (`isUncompletable: true`) as section dividers, prefixed with `* ---`:
-- `* --- Next Actions ---` — Concrete, single-step tasks I can act on immediately
-- `* --- Scheduled ---` — Tasks tied to a specific date, time, or calendar event
-- `* --- Waiting For ---` — Blocked on someone else; prefix task with "Waiting:"
-- `* --- Projects (Multi-Step) ---` — Parent tasks with subtasks for anything requiring 2+ steps
-- `* --- Reference / Someday ---` — Non-urgent items to review later, no due date required
+### Project Structure (8 projects, all flat)
+Inbox, Campfire, Raise for Good, Home & Auto, Family, Personal, Side Projects, Community. Each has real Todoist sections (Next Actions, Someday, etc.) — see `CLAUDE.md` for the complete map.
+
+### Sections — API Note
+Todoist's `add-sections` API may return 500 errors but still create sections (ghost successes). Always verify with `find-sections` after creation. Do **not** fall back to uncompletable header tasks — real sections are the standard now.
 
 ### Task Creation Rules
 - **Every task must be a concrete next action.** Not "Handle Bitly" but "Shadow Bitly discovery call — take notes on Chris's talk track."
-- **Use subtasks** for multi-step projects. The parent goes under Projects; subtasks are the actual next actions with individual due dates.
+- **Use subtasks** for multi-step projects. The parent goes under Projects (Multi-Step); subtasks are the actual next actions with individual due dates.
 - **Priorities:** p1 = must do today, p2 = important this week, p3 = should do soon, p4 = low/reference
-- **Labels:** Tag with context like `week1`, `onboarding`, `waiting`, `reference` for easy filtering
+- **Labels:** Use the standardized label system in `CLAUDE.md` — context (`@home`, `@computer`, `@phone`, `@errands`, `@office`), status (`waiting`, `someday`, `reference`), effort (`quick-win`, `deep-work`), domain (`campfire`, `rfg`, `onboarding`)
 - **Descriptions:** Include links (Notion, HubSpot, Zoom) and brief context so I can act without searching
 - **Waiting For items:** Always include who I'm waiting on and what the trigger is to unblock
-- **Due dates:** Be specific. "Wed Mar 4" not "this week." If no deadline, omit the date (Reference/Someday items).
+- **Due dates:** Be specific. "2026-03-15" not "this week." If no deadline, omit the date (Someday items).
 - **When rescheduling:** Move to the next logical date, don't just bump by one day
+- **Links/bookmarks are not tasks.** Save those to Raindrop instead (see `CLAUDE.md` for Raindrop filing rules)
 
 ### Weekly Review Checklist (Fridays)
 When I ask for a weekly review or the Friday scheduled task runs:
@@ -86,7 +85,8 @@ When I ask for a weekly review or the Friday scheduled task runs:
 2. Review Waiting For — follow up on anything stale (>3 days)
 3. Move completed subtasks and check if parent Projects can close
 4. Identify new Next Actions from Projects
-5. Clear Reference/Someday of anything that's become actionable or irrelevant
+5. Clear Someday of anything that's become actionable or irrelevant
+6. Triage Inbox — file or complete anything lingering
 
 ## Output Preferences
 - **Emails:** Plain text, no HTML formatting

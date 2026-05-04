@@ -17,6 +17,8 @@ A few highlights from what we covered:
 
 As we discussed, the next step is {pricing conversation / additional demo / technical review}. I have {date/time} held — shall we confirm?
 
+Also — I sent you a Slack connect request so we can handle any quick questions without the email back-and-forth. Feel free to ping me there anytime.
+
 Let me know if any questions come up in the meantime.
 
 Best,

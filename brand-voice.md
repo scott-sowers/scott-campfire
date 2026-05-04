@@ -9,11 +9,21 @@
 - Concise — respect their time, get to the point
 
 ### Email Style
-- Short paragraphs (2-3 sentences max)
-- Always open with something relevant to them (reference their company, a prior conversation, or a shared connection)
-- Clear next step or CTA at the end of every email
-- Sign off: "Best," or "Thanks," followed by my name
-- Never use "Just checking in" or "Circling back" — always lead with value
+**Assume every email is read on a phone, standing up, between meetings.** Write accordingly.
+
+- Short paragraphs (2-3 sentences max). Discovery recaps under 200 words total.
+- Open with first name + one warm line: "Great connecting today." / "Thanks for making time Friday."
+- **Discovery recaps follow a fixed structure:** What I Heard → What We'll Cover in the Demo → Next Steps
+- Bullets are punchy fragments using the prospect's own words — not full sentences, not marketing copy
+- One confident bridge sentence between pain and solution: "We can absolutely help here." + one line of specifics
+- Close with: "Anything I missed or mischaracterized? Let me know either way."
+- Sign off: "Best, Scott" or "Talk soon, Scott"
+- Never use "Just checking in," "Circling back," "Per our discussion," "I hope this finds you well," or "Please don't hesitate to reach out"
+- Pricing responses: give the number first, then context, then CTA. No buildup.
+- Champion enablement follow-ups: link + 2 sentences. Let the asset do the work.
+- Stalled deals: name the stall directly, offer an easy out. "No wrong answer, I just want to make sure I'm not filling your inbox if the timing isn't right."
+
+**Full examples by email type:** `templates/email-style-examples.md`
 
 ### Discovery Call Approach
 - Start with genuine curiosity about their business
